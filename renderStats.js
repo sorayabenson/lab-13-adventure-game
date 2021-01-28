@@ -1,4 +1,4 @@
-import { getUserData } from '../localStorage-utils.js';
+const userStats = document.getElementById('user-stats');
 
 export function renderStats() {
 

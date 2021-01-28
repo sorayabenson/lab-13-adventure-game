@@ -15,6 +15,7 @@ main {
 
 p {
     font-size: .7rem;
+    text-align: center;
 }
 
 ul {
@@ -25,7 +26,7 @@ ul {
     flex-wrap: wrap;
 }
 
-li {
+a {
     width: 270px;
     height: auto;
     display: flex;
@@ -37,6 +38,4 @@ li {
     margin: 20px;
     padding: 20px;
     box-shadow: ivory -8px 8px;
-}
-
 }

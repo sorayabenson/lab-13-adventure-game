@@ -125,9 +125,9 @@
     - A map that links to the different quests
 
     - HTML 
-        /- guiding paragraph
-        /- place for user stats
-        /- place for quests links (position with percentages top: %, left: %, to scale with the container. make sure the container is relative.)
+        //- guiding paragraph
+        //- place for user stats
+        //- place for quests links (position with percentages top: %, left: %, to scale with the container. make sure the container is relative.)
 
     - CSS
         - Make it pretty
@@ -135,9 +135,12 @@
     - JS
         - If all quests complete redirect to results page
         - If hp is <= 0 redirect to results page
-        - Else populate map with quests
+
+        - Else render map with quests
 
             a.href = '../quest/?id=' + 
+
+        - update user stats
 
 ## Quest
 

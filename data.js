@@ -1,3 +1,11 @@
+export default quests;
+
+const quests = [
+    bedroom,
+    kitchen,
+    shower,
+];
+
 const bedroom = {
     id: 'bedroom',
     title: 'The Bedroom',
@@ -105,3 +113,4 @@ const shower = {
         friendlyGhosts: 5,
     }]
 };
+

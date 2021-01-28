@@ -1,7 +1,54 @@
 import { saveFormData } from '../utils.js';
 import { saveUserData, getUserData } from '../localStorage-utils.js';
+import { renderMapLocations } from '../map/renderMapLocations.js';
 
 const test = QUnit.test;
+
+// renderMapLocations test
+test('should take in quest and return a element', (expect) => {
+    
+    const quest = {
+        id: 'bedroom',
+        title: 'The Bedroom',
+        /*map: {
+            top: ,
+            left: ,
+        },*/
+        image: 'bedroom.png',
+        description: `You seek rest but only find insomnia, who do you ask for help?`,
+        choices: [{
+            id: 'opossum',
+            title: 'Opossum Ghost',
+            image: 'opossum-ghost.png',
+            description: `Find deep sleep after they teach you how to play dead!`,
+            result: `Your eyes can finally stay shut until morning.`,
+            light: 10,
+            friendlyGhosts: 1,
+        }, {
+            id: 'blanket',
+            title: 'Blanket Ghost',
+            image: 'blanket-ghost.png',
+            description: `Get wrapped up in a weighted blanket like no other.`,
+            result: `You fall into a deep slumber that you haven’t known in years.`,
+            light: 30,
+            friendlyGhosts: 5,
+        }, {
+            id: 'screen',
+            title: 'Screen Ghost',
+            image: 'screen-ghost.png',
+            description: `Turn off your brain and turn on that screen.`,
+            result: `Oh no, it’s the Endless Scroll Shapeshifter! They’ve trapped you in an endless loop of doom scrolling and steal the little peace you had!`,
+            light: -20,
+            friendlyGhosts: -3,
+        }]
+    };
+
+    const expected = `<a href="../quest/?id=" class="map-location">The Bedroom</a>`;
+    
+    const actual = renderMapLocations(quest);
+
+    expect.equal(actual.outerHTML, expected);
+});
 
 // saveUserData test
 test('should take user data and push to localStorage', (expect) => {
