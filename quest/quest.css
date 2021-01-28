@@ -13,6 +13,111 @@ main {
     align-items: center;
 }
 
+div.user-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h6 {
+    text-align: center;
+}
+
 p {
     font-size: .7rem;
+    text-align: center;
+}
+
+div.quest {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    width: 270px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: ivory 2px solid;
+    border-radius: 2px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: ivory -8px 8px;
+}
+
+label:hover {
+    color: rgba(255, 255, 240, .5);
+    cursor: pointer;
+}
+
+label:active {
+    color: rgb(121, 255, 210);
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border: 1px ivory solid;
+    border-radius: 2px;
+    box-shadow: ivory -4px 4px;
+}
+
+h3 {
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+div.button-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    height: 30px;
+    width: auto;
+    background: ivory;
+    color: rgb(27, 27, 27);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: ivory 3px solid;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+button:hover {
+    background-color: rgb(121, 255, 210);
+    border: ivory 3px solid;
+    border-radius: 5px;
+}
+
+button:focus {
+    background: rgb(27, 27, 27);
+    color: ivory;
+    border: rgb(27, 27, 27) 3px solid;
+    border-radius: 5px;
 }

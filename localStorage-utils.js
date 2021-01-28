@@ -11,7 +11,6 @@ export function saveUserData(userData) {
 
 export function getUserData() {
     const stringUserData = localStorage.getItem(dataKey);
-
     const parsedUserData = JSON.parse(stringUserData);
 
     return parsedUserData;

@@ -1,8 +1,29 @@
 import { saveFormData } from '../utils.js';
 import { saveUserData, getUserData } from '../localStorage-utils.js';
 import { renderMapLocations } from '../map/renderMapLocations.js';
+import { renderStats } from '../renderStats.js';
 
 const test = QUnit.test;
+
+// renderStats test
+test('should take in userData and return current stats of light and friendly ghosts', (expect) => {
+
+    const userData = {
+        name: 'soraya',
+        character: 'underestimated',
+        light:25,
+        friendlyGhosts:0,
+        completed:{}
+    };
+
+    const expected = `<h6 class="user-stats">Light: 25, Friendly Ghosts: 0</h6>`;
+    
+    const actual = renderStats(userData);
+
+    //Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual.outerHTML, expected);
+});
 
 // renderMapLocations test
 test('should take in quest and return a element', (expect) => {
@@ -98,13 +119,15 @@ test('should get user data from localStorage', (expect) => {
 });
 
 /*
-// test saveUserData
+// test saveFormData
 test('should take in data from form and save to local storage with an empty array and starting stats', (expect) => {
    
-    const form = {
-        name: 'soraya',
-        character: 'underestimated',
-    };
+    const form = new FormData();
+    form.append('name', 'soraya');
+    form.append('character', 'underestimated');
+    saveUserData(form);
+    const stringUserData = localStorage.getItem('dataKey');
+    const parsedUserData = JSON.parse(stringUserData);
 
     const expected = {        
         name: 'soraya',
@@ -114,11 +137,12 @@ test('should take in data from form and save to local storage with an empty arra
         completed: {},
     };
     
-    const actual = saveFormData(form);
+    const actual = saveFormData(stringUserData);
 
-    expect.equal(actual, expected);
+    expect.deepEqual(actual, expected);
 });
 */
+
 
 /*
 test('time to test a function', (expect) => {

@@ -132,29 +132,31 @@
     - CSS
         - Make it pretty
 
-    - JS
+    //- JS
         //- If all quests complete redirect to results page
         //- If hp is <= 0 redirect to results page
 
-        - Else render map with quests
+        //- Else render map with quests
             //- write renderMapLocation function
 
             a.href = '../quest/?id=' + 
 
-        - update user stats
-            - write renderUserStats function
+        //- update user stats
+            //- write renderUserStats function
 
 ## Quest
 
     - A page for each quest to generate through findById
 
     - HTML
-        - place for user stats
-        - quest paragraph
-        - image
-        - form that holds
-            - Radio buttons for choices
+        //- place for user stats
+        //- quest title
+        //- quest paragraph
+        - image (what do I want that to look like and where?)
+        //- form that holds
+            //- Radio buttons for choices
             - Submit Button
+            - back to map button hidden
 
     - CSS
         - Make it pretty
@@ -173,6 +175,9 @@
         - On submit store user data with form data
             - Add user selection to user data
             - push to localStorage
+            - fill results div, hide previous content
+            - show back to map button
+        - Back to map button
             - Redirect to map
 
 ## Results

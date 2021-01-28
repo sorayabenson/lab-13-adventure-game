@@ -1,14 +1,3 @@
-/*     
-    //- If all quests complete redirect to results page
-    //- If hp is <= 0 redirect to results page
-
-    //- Else render map with quests
-
-        a.href = '../quest/?id=' + 
-
-    - update user stats
-
-*/
 import { getUserData } from '../localStorage-utils.js';
 import quests from '../data.js';
 import { renderMapLocations } from './renderMapLocations.js';
