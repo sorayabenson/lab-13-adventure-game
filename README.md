@@ -133,14 +133,16 @@
         - Make it pretty
 
     - JS
-        - If all quests complete redirect to results page
-        - If hp is <= 0 redirect to results page
+        //- If all quests complete redirect to results page
+        //- If hp is <= 0 redirect to results page
 
         - Else render map with quests
+            //- write renderMapLocation function
 
             a.href = '../quest/?id=' + 
 
         - update user stats
+            - write renderUserStats function
 
 ## Quest
 

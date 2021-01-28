@@ -1,7 +1,7 @@
 export function renderMapLocations(location) {
     
     /*
-        <a href="../quest/?id=">The Bedroom</a>
+        <a href="../quest/?id=" class="map-location">The Bedroom</a>
     */
 
     const a = document.createElement('a');

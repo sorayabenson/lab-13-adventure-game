@@ -1,11 +1,3 @@
-export default quests;
-
-const quests = [
-    bedroom,
-    kitchen,
-    shower,
-];
-
 const bedroom = {
     id: 'bedroom',
     title: 'The Bedroom',
@@ -105,7 +97,7 @@ const shower = {
         friendlyGhosts: -2,
     }, {
         id: 'smoke',
-        title: 'Smoke Ghost'
+        title: 'Smoke Ghost',
         image: 'smoke-ghost.png',
         description: `Find even more comfort in relaxing billows of smoke.`,
         result: `Your mind finds the stillness it has been longing for.`,
@@ -114,3 +106,10 @@ const shower = {
     }]
 };
 
+const quests = [
+    bedroom,
+    kitchen,
+    shower,
+];
+
+export default quests;
