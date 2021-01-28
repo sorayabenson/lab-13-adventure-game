@@ -15,6 +15,21 @@ main {
 
 div.user-stats {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.quest {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.quest-wrapper {
+    width: 60%;
+    height: auto;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -29,14 +44,6 @@ p {
     text-align: center;
 }
 
-div.quest {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 form {
     display: flex;
     flex-direction: row;
@@ -46,7 +53,7 @@ form {
 
 label {
     width: 270px;
-    height: auto;
+    height: 380px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -56,6 +63,7 @@ label {
     margin: 20px;
     padding: 20px;
     box-shadow: ivory -8px 8px;
+    text-align: center;
 }
 
 label:hover {

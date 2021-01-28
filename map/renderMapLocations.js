@@ -6,7 +6,7 @@ export function renderMapLocations(location) {
 
     const a = document.createElement('a');
     a.textContent = location.title;
-    a.href = '../quest/?id=';
+    a.href = `../quest/?id=${location.id}`;
     a.classList.add('map-location');
 
     return a;

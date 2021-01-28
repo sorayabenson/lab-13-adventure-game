@@ -171,16 +171,20 @@
 
             const questId = params.get('id')
 
-            const quest = findById(questData, quest
+            const quest = findById(questData, questID)
 
                 - Redirect back to map if no id found.
+
         - Populate the page with the quest ID
-        - Once the choice is selected the results for that choice pop up
-        - On submit store user data with form data
+            //- renderQuest function
+            //- renderChoices function
+
+        - On play store user data with form data
             - Add user selection to user data
             - push to localStorage
             - fill results div, hide previous content
             - show back to map button
+
         - Back to map button
             - Redirect to map
 
