@@ -63,7 +63,7 @@
                     - clear localStorage function
                     - Redirect to home page
 
-## Data
+## //Data
 
     //- Take time to write the story
         //- Who are you
@@ -108,25 +108,26 @@
 
     //- CSS
         //- ghosts esthetic: modify for this project.
+        - fix so it highlights seslection
 
     - JS
         - TDD function that takes FormData and pulls relevant information to add to user data, which represents the initial state.
-        - Use a completed: {} to track which quests have been complete.
-        - On submit store user data with form data
-            - name
-            - character
-            - populate starting stats: hp and currency
-            - push to localStorage
-            - Redirect to map
+        //- Use a completed: {} to track which quests have been complete.
+        //- On submit store user data with form data
+            //- name
+            //- character
+            //- populate starting stats: hp and currency
+            //- push to localStorage
+            //- Redirect to map
 
 ## Map
 
     - A map that links to the different quests
 
     - HTML 
-        - guiding paragraph
-        - place for user stats
-        - place for quests links (position with percentages top: %, left: %, to scale with the container. make sure the container is relative.)
+        /- guiding paragraph
+        /- place for user stats
+        /- place for quests links (position with percentages top: %, left: %, to scale with the container. make sure the container is relative.)
 
     - CSS
         - Make it pretty

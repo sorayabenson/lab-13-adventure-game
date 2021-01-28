@@ -2,13 +2,8 @@ body, html {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-}
-
-label:hover {
-    color: rgba(255, 255, 240, .5);
-    cursor: pointer;
 }
 
 main {
@@ -60,6 +55,11 @@ label.character-label {
     text-align: center;
 }
 
+label:hover {
+    color: rgba(255, 255, 240, .5);
+    cursor: pointer;
+}
+
 label:active {
     color: rgb(121, 255, 210);
 }
@@ -68,10 +68,9 @@ input[type='radio'] {
     display: none;
 }
 
-input[type='radio']:checked+label {
+input[type='radio']:checked + label.character-label {
     background: white;
     color: rgb(121, 255, 210);
-
 }
 
 button {
