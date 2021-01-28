@@ -45,7 +45,7 @@ form {
     align-items: center;
 }
 
-label.character {
+label.character-label {
     width: 270px;
     height: 100px;
     display: flex;
@@ -64,12 +64,14 @@ label:active {
     color: rgb(121, 255, 210);
 }
 
-label:focus {
-    color: rgb(121, 255, 210);
+input[type='radio'] {
+    display: none;
 }
 
-input.character {
-    display: none;
+input[type='radio']:checked+label {
+    background: white;
+    color: rgb(121, 255, 210);
+
 }
 
 button {

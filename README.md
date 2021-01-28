@@ -99,15 +99,15 @@
     - Start the story here.
 
     - HTML
-        - Opening paragraph with story.
+        //- Opening paragraph with story.
         - Images?
-        - A form that takes in:
-                - Name
-                - Character
-                - Button to start to play
+        //- A form that takes in:
+                //- Name
+                //- Character
+                //- Button to start to play
 
-    - CSS
-        - ghosts esthetic: modify for this project.
+    //- CSS
+        //- ghosts esthetic: modify for this project.
 
     - JS
         - TDD function that takes FormData and pulls relevant information to add to user data, which represents the initial state.
