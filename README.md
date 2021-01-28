@@ -65,30 +65,34 @@
 
 ## Data
 
-    - Take time to write the story
-        - Who are you
-        - Why are you doing this
-        - Where are you going
-        - What happens along the way
-        - What are we keeping track of?
+    //- Take time to write the story
+        //- Who are you
+        //- Why are you doing this
+        //- Where are you going
+        //- What happens along the way
+        //- What are we keeping track of?
 
-    - The overarching story
-        - Characters
-        - Points to keep track of
-        - Locations
+    //- The overarching story
+        //- Characters
+        //- Points to keep track of
+        //- Locations
 
-    - Locations
-        - What happens when we get there?
-            - The possibilities
-            - How they effect the points
+    //- Locations
+        //- What happens when we get there?
+            //- The possibilities
+            //- How they effect the points
+
+        //- 1 array per location
 
     - Results 
         - How are they calculated?
-        - What is the message for each possible outcome.
+        //- What is the message for each possible outcome.
 
-    - Look at Dani's metadata for a structure reference.
-    - Think of common descriptors.
-    - What are the choices and what are the consequences?
+    //- Look at Dani's metadata for a structure reference.
+    //- Think of common descriptors.
+    //- What are the choices and what are the consequences?
+
+    //- Write the quest array
 
 ## Home
 
@@ -159,6 +163,7 @@
 
                 - Redirect back to map if no id found.
         - Populate the page with the quest ID
+        - Once the choice is selected the results for that choice pop up
         - On submit store user data with form data
             - Add user selection to user data
             - push to localStorage

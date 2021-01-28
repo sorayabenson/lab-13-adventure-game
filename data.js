@@ -9,6 +9,7 @@ const bedroom = {
     description: `You seek rest but only find insomnia, who do you ask for help?`,
     choices: [{
         id: 'opossum',
+        title: 'Opossum Ghost',
         image: 'opossum-ghost.png',
         description: `Find deep sleep after they teach you how to play dead!`,
         result: `Your eyes can finally stay shut until morning.`,
@@ -16,6 +17,7 @@ const bedroom = {
         friendlyGhosts: 1,
     }, {
         id: 'blanket',
+        title: 'Blanket Ghost',
         image: 'blanket-ghost.png',
         description: `Get wrapped up in a weighted blanket like no other.`,
         result: `You fall into a deep slumber that you haven’t known in years.`,
@@ -23,6 +25,7 @@ const bedroom = {
         friendlyGhosts: 5,
     }, {
         id: 'screen',
+        title: 'Screen Ghost',
         image: 'screen-ghost.png',
         description: `Turn off your brain and turn on that screen.`,
         result: `Oh no, it’s the Endless Scroll Shapeshifter! They’ve trapped you in an endless loop of doom scrolling and steal the little peace you had!`,
@@ -42,6 +45,7 @@ const kitchen = {
     description: `You seek nourishment but find the kitchen in utter disarray, who do you ask for help?`,
     choices: [{
         id: 'coffee',
+        title: 'Coffee Ghost',
         image: 'coffee-ghost.png',
         description: `Enjoy the hot cup of energy and get out of the kitchen fast.`,
         result: `Oh no, it’s the Nerve Fraying Shapeshifter! They betray you and your nerves, you can’t stop shaking!`,
@@ -49,6 +53,7 @@ const kitchen = {
         friendlyGhosts: -2,
     }, {
         id: `dishes`,
+        title: 'Dishes Ghost',
         image: 'dishes-ghost.png',
         description: `Watch the dishes do themselves.`,
         result: `The kitchen sparkles and you dance in the sheer joy that you didn’t clean it yourself.`,
@@ -56,6 +61,7 @@ const kitchen = {
         friendlyGhosts: 3,
     }, {
         id: 'pizza',
+        title: 'Pizza Ghost',
         image: 'pizza-ghost.png',
         description: ` They get you and your turtle your favorite snack.`,
         result: `You enjoy food you didn’t have to make yourself.`,
