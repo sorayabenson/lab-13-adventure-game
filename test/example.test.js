@@ -2,8 +2,29 @@ import { saveFormData } from '../utils.js';
 import { saveUserData, getUserData } from '../localStorage-utils.js';
 import { renderMapLocations } from '../map/renderMapLocations.js';
 import { renderStats } from '../renderStats.js';
+import { renderChoices } from '../quest/renderChoices.js';
 
 const test = QUnit.test;
+
+// renderChoices test
+test('should take in quest.choices and render a label', (expect) => {
+
+    const choices = {
+        id: 'opossum',
+        title: 'Opossum Ghost',
+        image: 'opossum-ghost.png',
+        description: `Find deep sleep after they teach you how to play dead!`,
+        result: `Your eyes can finally stay shut until morning.`,
+        light: 10,
+        friendlyGhosts: 1,
+    };
+    
+    const expected = `<label class="choices"><h3 class="ghost-name">Opossum Ghost</h3><img class="ghost-image" src="../assets/opossum-ghost.png" alt="Opossum Ghost"><p class="ghost-description">Find deep sleep after they teach you how to play dead!</p><input type="radio"></label>`;
+
+    const actual = renderChoices(choices);
+
+    expect.equal(actual.outerHTML, expected);
+});
 
 // renderStats test
 test('should take in userData and return current stats of light and friendly ghosts', (expect) => {
@@ -20,8 +41,6 @@ test('should take in userData and return current stats of light and friendly gho
     
     const actual = renderStats(userData);
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
     expect.equal(actual.outerHTML, expected);
 });
 

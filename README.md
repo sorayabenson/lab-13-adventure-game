@@ -155,8 +155,12 @@
         - image (what do I want that to look like and where?)
         //- form that holds
             //- Radio buttons for choices
-            - Submit Button
-            - back to map button hidden
+            //- Choices
+                //- Name
+                //- Image
+                //- Description
+        //- Submit Button
+        //- back to map button hidden
 
     - CSS
         - Make it pretty
