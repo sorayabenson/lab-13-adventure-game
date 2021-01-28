@@ -19,7 +19,23 @@ main {
 }
 
 p {
-    font-size: .8rem;
+    font-size: .7rem;
+}
+
+label.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+div.character-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
 }
 
 form {
@@ -27,4 +43,55 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+label.character {
+    width: 270px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: ivory 2px solid;
+    border-radius: 2px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: ivory -8px 8px;
+    text-align: center;
+}
+
+label:active {
+    color: rgb(121, 255, 210);
+}
+
+label:focus {
+    color: rgb(121, 255, 210);
+}
+
+input.character {
+    display: none;
+}
+
+button {
+    height: 30px;
+    background: ivory;
+    color: rgb(27, 27, 27);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: ivory 3px solid;
+    border-radius: 5px;
+    margin: 0px 5px;
+}
+
+button:hover {
+    background-color: rgb(121, 255, 210);
+    border: ivory 3px solid;
+    border-radius: 5px;
+}
+
+button:focus {
+    background: rgb(27, 27, 27);
+    color: ivory;
+    border: rgb(27, 27, 27) 3px solid;
+    border-radius: 5px;
 }
