@@ -3,11 +3,30 @@ import { saveUserData, getUserData } from '../localStorage-utils.js';
 import { renderMapLocations } from '../map/renderMapLocations.js';
 import { renderStats } from '../renderStats.js';
 import { renderChoices } from '../quest/renderChoices.js';
+import { renderQuest } from '../quest/renderQuest.js';
 
 const test = QUnit.test;
 
+// renderQuest test
+test('should take in quest and render a h2,', (expect) => {
+
+    const quest = {
+        id: 'bedroom',
+        title: 'The Bedroom',
+        image: 'bedroom.png',
+        description: `You seek rest but only find insomnia, who do you ask for help?`
+    };
+    
+    const expected = `<div class="quest-wrapper"><h2 class="quest-title">The Bedroom</h2><img class="quest-image" src="../assets/bedroom.png" alt="The Bedroom Quest"><p class="quest-description">You seek rest but only find insomnia, who do you ask for help?</p></div>`;
+
+    const actual = renderQuest(quest);
+
+    expect.equal(actual.outerHTML, expected);
+});
+
+
 // renderChoices test
-test('should take in quest.choices and render a label', (expect) => {
+test('should take in choices and render a label', (expect) => {
 
     const choices = {
         id: 'opossum',
