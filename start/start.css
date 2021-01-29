@@ -68,11 +68,6 @@ input[type='radio'] {
     display: none;
 }
 
-input[type='radio']:checked + label.character-label {
-    background: white;
-    color: rgb(121, 255, 210);
-}
-
 button {
     height: 30px;
     background: ivory;

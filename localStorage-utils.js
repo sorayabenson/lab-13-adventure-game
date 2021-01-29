@@ -1,7 +1,7 @@
 //import { findById } from './utils.js';
 
 const dataKey = 'userData'; //key
-//const emptyData = [];
+const emptyData = [];
 
 export function saveUserData(userData) {
     const stringUserData = JSON.stringify(userData);
@@ -14,6 +14,12 @@ export function getUserData() {
     const parsedUserData = JSON.parse(stringUserData);
     
     return parsedUserData;
+}
+
+export function clearUserData() {
+    const stringEmptyData = JSON.stringify(emptyData);
+
+    localStorage.setItem(dataKey, stringEmptyData);
 }
 
 /*

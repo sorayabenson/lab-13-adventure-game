@@ -144,10 +144,10 @@
         //- update user stats
             //- write renderUserStats function
 
-        - Disable link and change style when quest completed
-            - if completed
-                - Disable link
-                - Change style
+        //- Disable link and change style when quest completed
+            //- if completed
+                //- Disable link
+                //- Change style
 
 
 ## Quest
@@ -204,16 +204,40 @@
 
     - Results based on user data.
 
-        - HTML
-            - paragraph to display the custom ending that is determined by the user stats.
-            - button to play again
+        //- HTML
+            //- div for final results
+            //- paragraph to display the custom ending that is determined by the user stats.
+            //- button to play again
 
         - CSS
-            - make it pretty.
+            //- make it pretty.
 
         -JS
-            - Use if/else statements to claculate points based off of userdata to dynamicaly access the message array.
+            //- Use if/else statements to claculate points based off of userdata to dynamicaly access the message array.
+                - Calculate
+                - Use score to display message
+
+            //- Show final score with renderStats function.
+                //- append to div
 
             - Button to play again 
                 - clear localStorage function
                 - Redirect to home page
+
+
+## to do
+    - images
+        - more ghosts
+        - start image
+        - map
+        - results
+            - can the ghosts you select appear at the end?
+            - how would I track that?
+
+    - refine css
+        - animate/glow load transition
+
+    - figure out js for changing label border color with radio selected.
+        - start
+        - choices
+        - map?
