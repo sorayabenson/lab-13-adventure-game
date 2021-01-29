@@ -67,13 +67,24 @@ label {
     text-align: center;
 }
 
+input[type='radio'] {
+    display: none;
+}
+
 label:hover {
     color: rgba(255, 255, 240, .5);
     cursor: pointer;
+    transition: .2s ease-in-out;
 }
 
 label:active {
     color: rgb(121, 255, 210);
+}
+
+input[type='radio']:checked + label {
+    border: rgb(121, 255, 210) 2px solid;
+    box-shadow: rgb(121, 255, 210) -8px 8px;    
+    transition: .5s ease-in-out;
 }
 
 img {
@@ -93,10 +104,6 @@ h2 {
     margin: 0px;
     padding: 0px 0px 10px 0px;
     text-align: center;
-}
-
-input[type='radio'] {
-    display: none;
 }
 
 div.button-div {

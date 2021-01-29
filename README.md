@@ -228,11 +228,39 @@
 ## to do
     - images
         - more ghosts
+            - blanket
+            - screen
+            - coffee
+            - dishes
+            - essential oil
+            - smoker
+
+        - shape shifters
+            - Slippery 
+            - Nerve Fraying
+            - Endless Scroll
+                - sharper lines same style and process
+
         - start image
+            - flicker glow halo png animate?
+
         - map
+            - simple apartment layout like my last place en heredia
+            - same style and process as ghosts
+        
+        - locations
+            - bedroom rumpled bed
+            - kitchen stack of plates to the roof
+            - shower tub with steam
+                - same style and process as ghosts
+
         - results
             - can the ghosts you select appear at the end?
             - how would I track that?
+                - make another empty {} on saveFrom function for ghost type
+                - push choice data into array
+                - on results page pull ghosts like score function
+                - render ghost.image
 
     - refine css
         - animate/glow load transition
@@ -241,3 +269,7 @@
         - start
         - choices
         - map?
+    
+    - refactor
+
+    - after selection have results appear like the ghost card with the results on it but bigger.

@@ -39,3 +39,15 @@ a {
     padding: 20px;
     box-shadow: ivory -8px 8px;
 }
+
+a:hover {
+    color: rgb(121, 255, 210);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+a:checked {
+    border: rgb(121, 255, 210) 2px solid;
+    box-shadow: rgb(121, 255, 210) -8px 8px;    
+    transition: .5s ease-in-out;
+}
