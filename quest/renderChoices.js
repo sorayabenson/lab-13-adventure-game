@@ -13,18 +13,20 @@ export function renderChoices(choices) {
     */
 
     const label = document.createElement('label');
-    label.classList.add('choices');
+    label.classList.add('choices-label');
 
     const h3 = document.createElement('h3');
     h3.classList.add('ghost-name');
     h3.textContent = choices.title;
     label.append(h3);
 
+    /*
     const img = document.createElement('img');
     img.classList.add('ghost-image');
     img.src = `../assets/${choices.image}`;
     img.alt = choices.title;
     label.append(img);
+    */
 
     const p = document.createElement('p');
     p.classList.add('ghost-description');
@@ -33,6 +35,9 @@ export function renderChoices(choices) {
 
     const input = document.createElement('input');
     input.type = 'radio';
+    input.classList.add('choices');
+    input.name = 'choices';
+    input.value = choices.id;
     label.append(input);
 
     return label;

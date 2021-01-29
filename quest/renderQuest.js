@@ -16,12 +16,14 @@ export function renderQuest(quest) {
     h2.textContent = quest.title;
     div.append(h2);
 
+    /*
     const img = document.createElement('img');
     img.classList.add('quest-image');
     img.src = `../assets/${quest.image}`;
     img.alt = `${quest.title} Quest`;
     div.append(img);
-
+    */
+   
     const p = document.createElement('p');
     p.classList.add('quest-description');
     p.textContent = quest.description;

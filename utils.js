@@ -2,7 +2,7 @@ import { saveUserData } from './localStorage-utils.js';
 
 const form = document.querySelector('form');
 
-export function findById(id, array){
+export function findById(array, id){
     for (let item of array) {
         if (item.id === id) {
             return item;
@@ -21,9 +21,7 @@ export function saveFormData() {
         completed: {},
     };
 
-    const stringUser = JSON.stringify(user);
-
-    saveUserData(stringUser);
+    saveUserData(user);
 
 }
 

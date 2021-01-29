@@ -64,7 +64,7 @@ test('should take in userData and return current stats of light and friendly gho
 });
 
 // renderMapLocations test
-test('should take in quest and return a element', (expect) => {
+test('should take in quest and return an a element', (expect) => {
     
     const quest = {
         id: 'bedroom',
@@ -102,7 +102,7 @@ test('should take in quest and return a element', (expect) => {
         }]
     };
 
-    const expected = `<a href="../quest/?id=" class="map-location">The Bedroom</a>`;
+    const expected = `<a href="../quest/?id=bedroom" class="map-location">The Bedroom</a>`;
     
     const actual = renderMapLocations(quest);
 

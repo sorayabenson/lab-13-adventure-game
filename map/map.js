@@ -6,7 +6,7 @@ import { renderStats } from '../renderStats.js';
 const statsDiv = document.getElementById('user-stats');
 const map = document.getElementById('map-locations');
 
-const currentUserData = JSON.parse(getUserData('dataKey'));
+const currentUserData = getUserData('userData');
 const currentStats = renderStats(currentUserData);
 
 let completedAllquests = true;

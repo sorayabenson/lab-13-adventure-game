@@ -165,8 +165,10 @@
     - CSS
         - Make it pretty
 
+        - js for selected radio style change.
+
     - JS
-        - Grab Id of the quest from the URL
+        //- Grab Id of the quest from the URL
             const params = new URLSearchParams(window.location.search);
 
             const questId = params.get('id')
@@ -175,7 +177,7 @@
 
                 - Redirect back to map if no id found.
 
-        - Populate the page with the quest ID
+        //- Populate the page with the quest ID
             //- renderQuest function
             //- renderChoices function
 
