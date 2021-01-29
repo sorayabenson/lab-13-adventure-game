@@ -73,7 +73,3 @@ a:hover {
     color: rgba(255, 255, 240, .5);
     cursor: default;
 }
-
-a:visited {
-    color: rgb(121, 255, 210);
-}

@@ -144,6 +144,12 @@
         //- update user stats
             //- write renderUserStats function
 
+        - Disable link and change style when quest completed
+            - if completed
+                - Disable link
+                - Change style
+
+
 ## Quest
 
     - A page for each quest to generate through findById

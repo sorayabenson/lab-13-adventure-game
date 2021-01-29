@@ -1,5 +1,5 @@
-import { getUserData } from '../localStorage-utils.js';
 import quests from '../data.js';
+import { getUserData } from '../localStorage-utils.js';
 import { renderMapLocations } from './renderMapLocations.js';
 import { renderStats } from '../renderStats.js';
 
@@ -27,6 +27,7 @@ for (let quest of quests) {
     const questLocation = renderMapLocations(quest);
 
     map.append(questLocation);
+
 }
 
 statsDiv.append(currentStats);

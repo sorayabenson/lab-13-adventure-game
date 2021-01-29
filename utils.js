@@ -22,6 +22,13 @@ export function saveFormData() {
     };
 
     saveUserData(user);
+}
 
+export function disableLink(id) {
+    const locationLink = document.getElementById(id);
+
+    if (!locationLink) {return;}
+    locationLink.href = '#';
+    locationLink.className = 'disabledLink';
 }
 
