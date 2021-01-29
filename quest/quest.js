@@ -10,6 +10,8 @@ const statsDiv = document.getElementById('user-stats');
 const questDiv = document.getElementById('quest');
 const form = document.getElementById('form');
 const playButton = document.getElementById('submit');
+const resultsWrapper = document.getElementById('form-results-wrapper');
+const backToMapButton = document.getElementById('back-to-map');
 
 // setting up consts for functions
 const currentUserData = getUserData('userData');
@@ -47,14 +49,27 @@ playButton.addEventListener('click', (e) => {
     currentUserData.completed[questID] = true;
 
     saveUserData(currentUserData);
+
+    resultsWrapper.textContent = '';
+
+    const consequencesDiv = document.createElement('div');
+
+    const resultsMessage = document.createElement('p');
+    resultsMessage.textContent = choice.result;
+    consequencesDiv.append(resultsMessage);
+
+    const resultsStats = document.createElement('p');
+    resultsStats.textContent = `Light: ${choice.light},  Friendly Ghosts: ${choice.friendlyGhosts}`;
+    consequencesDiv.append(resultsStats);
+    
+    resultsWrapper.append(consequencesDiv);
+
+    playButton.style.display = 'none';
+    backToMapButton.style.display = 'block';
     
 });
 
+backToMapButton.addEventListener('click', () => {
 
-/*      
-  - On play store user data with form data
-    - Add user selection to user data
-    - push to localStorage
-    - fill results div, hide previous content
-    - show back to map button
-*/
+    window.location = '../map/index.html';
+});

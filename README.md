@@ -181,14 +181,18 @@
             //- renderQuest function
             //- renderChoices function
 
-        - On play store user data with form data
+        //- On play store user data with form data
             - Add user selection to user data
             - push to localStorage
             - fill results div, hide previous content
             - show back to map button
 
-        - Back to map button
+        //- Back to map button
             - Redirect to map
+
+        - refactoring
+            - addNewStats function for play button
+            - resultsMessage function for play button
 
 ## Results
 
