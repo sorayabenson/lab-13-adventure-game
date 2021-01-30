@@ -257,19 +257,21 @@
         - results
             - can the ghosts you select appear at the end?
             - how would I track that?
-                - make another empty {} on saveFrom function for ghost type
-                - push choice data into array
+                //- make another empty {} on saveFrom function for ghost type
+                //- push choice data into array
                 - on results page pull ghosts like score function
                 - render ghost.image
 
     - refine css
         - animate/glow load transition
 
-    - figure out js for changing label border color with radio selected.
-        - start
-        - choices
-        - map?
+    //- figure out js for changing label border color with radio selected.
+        //- start
+        //- choices
+        //- map?
     
     - refactor
 
-    - after selection have results appear like the ghost card with the results on it but bigger.
+    //- after selection have results appear like the ghost card with the results on it but bigger.
+
+    currently refactoring render-results for both image and message

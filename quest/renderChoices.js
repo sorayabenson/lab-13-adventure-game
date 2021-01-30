@@ -31,7 +31,7 @@ export function renderChoices(choices) {
     h3.classList.add('ghost-name');
     h3.textContent = choices.title;
     label.append(h3);
-
+                
     const img = document.createElement('img');
     img.classList.add('ghost-image');
     img.src = `../assets/${choices.image}`;

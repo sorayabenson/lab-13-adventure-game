@@ -19,6 +19,7 @@ export function saveFormData() {
         light: 25,
         friendlyGhosts: 0,
         completed: {},
+        ghosts: {},
     };
 
     saveUserData(user);

@@ -4,6 +4,7 @@ body, html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
 }
 
 main {
@@ -12,6 +13,37 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+div.welcome-note {
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes pulse {
+    0% {
+        background-image: url('../assets/halo-100-medium.png');
+    }
+    100% {
+        background-image: url('../assets/halo-100.png');
+    }
+}
+
+.welcome-note {
+    animation: 
+        pulse
+        1.7s
+        ease-in-out
+        alternate
+        infinite;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;    
+}
+
 
 p {
     font-size: .7rem;
@@ -22,7 +54,6 @@ label.name {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
 }
 
 div.character-box {
@@ -30,7 +61,7 @@ div.character-box {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 75px;
+    margin-bottom: 35px;
 }
 
 form {
@@ -83,7 +114,7 @@ button {
     font-weight: 600;
     border: ivory 3px solid;
     border-radius: 5px;
-    margin: 0px 5px;
+    margin: 0px 0px 50px 0px;
 }
 
 button:hover {
